@@ -12,5 +12,12 @@
         </p>
     </statement>
   </definition>
+  <example>
+    <statement>
+      <p>
+        Given <m>r\in R</m> we define <m>r\colon\Z_{\geq 0}\to R</m> such that <m>0\mapsto r</m> and <m>n\mapsto 0</m> for all <m>n\in\N</m>.
+      </p>
+    </statement>
+  </example>
 
 </section>
