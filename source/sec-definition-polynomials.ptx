@@ -27,7 +27,7 @@
       </p>
     </statement>
   </example>
-  <definition xml:id="def-ring-of-polyniomials">
+  <definition xml:id="def-ring-of-polynomials">
     <title>Ring of polynomials</title>
        
     <statement>
@@ -56,5 +56,13 @@
       </p>
     </statement>
   </exercise>
-
+  <exercise>
+    <statement>
+      <p>
+        Convince yourself that the <xref ref="def-ring-of-polynomials" /> distinguishes a polynomial and a polynomial function.
+      </p>
+      <p>Indeed, consider <m>R=\{r_1,r_2,\ldots,r_n\}</m> to be a finite field. The polynomial <m>P=(X-r_1)(X-r_2)\cdots (X-r_n)</m> is not a zero polynomial, but the polynomial function <m>P\colon R\to R</m> is a zero function.</p>
+      </p>
+    </statement>
+  </exercise>
 </section>
