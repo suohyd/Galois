@@ -8,7 +8,7 @@
     <title>Definition of a polynomial</title>
     <statement>
       <p>
-        A polynomial in one indeterminate with coefficients in a ring <m>R</m> is defined as a map <m>P\colon\mathbb{Z}_{\geq 0}\to R</m> such that the image of <m>n\in\Z_{\geq 0}</m> under <m>P</m> is denoted by <m>P_n</m> and the set <m>{\mathrm supp}\,P=\{n\in\mathbb{Z}_{\geq 0}:P_n\neq 0\}</m> is finite.
+        A polynomial in one indeterminate with coefficients in a ring <m>R</m> is defined as a map <m>P\colon\mathbb{Z}_{\geq 0}\to R</m> such that the image of <m>n\in\Z_{\geq 0}</m> under <m>P</m> is denoted by <m>P_n</m> and the set <m>\{n\in\mathbb{Z}_{\geq 0}:P_n\neq 0\}</m> is finite.
         </p>
     </statement>
   </definition>
@@ -42,12 +42,13 @@
     </statement>
   </definition>
   <remark>
-    <statement>
-      <p>
+    <p>
         Note that every polynomial <m>P</m> can be uniquely written as <m>P=\sum P_i\cdot X^i</m>.
       So, from now onwards write <m>r_0+r_1X+\cdots+r_nX^n</m> for the polynomial that maps <m>i\in\Z_{\geq 0}</m> to <m>r_i</m> for <m>i=0,1,\ldots,n</m> and to <m>0</m> for <m>i \geq n+1</m>.
-      </p>
-    </statement>
+    </p>
+    <p>
+      As usual, for a nonzero polynomial <m>P</m> the largest integer <m>n</m> for which the coefficient of <m>X^n</m> is not zero is called the <em>leading coefficient</em> of <m>P</m> and <m>n</m> is called the <em>degree</em> of <m>P</m>. A polynomial <m>P</m> is called a <em>monic</em> polynomial if the leading coefficient is <m>1</m>.
+    </p>
   </remark>
   <exercise>
     <statement>
@@ -59,10 +60,31 @@
   <exercise>
     <statement>
       <p>
-        Convince yourself that the <xref ref="def-ring-of-polynomials" /> distinguishes a polynomial and a polynomial function.
+        Convince yourself that <xref ref="def-polynomial"/> distinguishes a polynomial and a polynomial function.
       </p>
-      <p>Indeed, consider <m>R=\{r_1,r_2,\ldots,r_n\}</m> to be a finite field. The polynomial <m>P=(X-r_1)(X-r_2)\cdots (X-r_n)</m> is not a zero polynomial, but the polynomial function <m>P\colon R\to R</m> is a zero function.</p>
+      <p>Indeed, let <m>R=\{r_1,r_2,\ldots,r_n\}</m> be a finite field. The polynomial <m>P=(X-r_1)(X-r_2)\cdots (X-r_n)</m> is not a zero polynomial, but the polynomial function <m>P\colon R\to R</m> is a zero function.
       </p>
     </statement>
   </exercise>
+  <p>
+    We state the following theorem without proof. The proof is similar to the proof of the division algorithm in field case.
+  </p>
+  <theorem xml:id="thm-euclidean-algorithm">
+    <title>Euclidean Algorithm</title>
+    <statement>
+      <p>
+        Let <m>A</m> be a commutative ring with unity and <m>P_1,P_2\in A[X]</m> be polynomials. If the leading coefficient of <m>P_2</m> is invertible in <m>A</m>, then there exist unique polynomials <m>Q,R\in A[X]</m> such that <m>P_1=P_2Q+R</m> and <m>\deg R &lt; \deg P_2</m>.
+      </p>
+    </statement>
+  </theorem>
+  <example>
+    <statement>
+      <p>
+        Let <m>I=\{f\in\Q[X,Y]:f(t^2,t^3)=0\text{ for }t\in\Q\}</m>. We show that <m>Y^2-X^3</m> divides <m>f\in I</m>.
+      </p>
+      <p>
+        Suppose that <m>A=\Q[X]</m>. Note that <m>\Q[X,Y]=A[Y]</m>. As <m>Y^2-X^3</m> is a monic polynomial in <m>A[Y]</m>, there exists <m>Q,R\in\A[Y]</m> such that <m>f=Q(X,Y)(Y^2-X^3)+R(X,Y)</m> with <m>R=a(X)Y+b(X)</m>.
+      </p>
+    </statement>
+  </example>
 </section>
