@@ -3,12 +3,12 @@
 <section xml:id="sec-definition-polynomials" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Definition</title>
 
-  <p> Let <m>R</m> be a ring with unity. We give definition of a polynomial in one inderminate with coefficients in a ring <m>R</m>. </p>
+  <p> Let <m>R</m> be a ring with unity. We give definition of a polynomial in one variable with coefficients in a ring <m>R</m>. </p>
   <definition xml:id="def-polynomial">
     <title>Definition of a polynomial</title>
     <statement>
       <p>
-        A polynomial in one indeterminate with coefficients in a ring <m>R</m> is defined as a map <m>P\colon\mathbb{Z}_{\geq 0}\to R</m> such that the image of <m>n\in\Z_{\geq 0}</m> under <m>P</m> is denoted by <m>P_n</m> and the set <m>\{n\in\mathbb{Z}_{\geq 0}:P_n\neq 0\}</m> is finite.
+        A polynomial in one variable with coefficients in a ring <m>R</m> is defined as a map <m>P\colon\mathbb{Z}_{\geq 0}\to R</m> such that the image of <m>n\in\Z_{\geq 0}</m> under <m>P</m> is denoted by <m>P_n</m> and the set <m>\{n\in\mathbb{Z}_{\geq 0}:P_n\neq 0\}</m> is finite.
         </p>
     </statement>
   </definition>
@@ -50,6 +50,25 @@
       As usual, for a nonzero polynomial <m>P</m> the largest integer <m>n</m> for which the coefficient of <m>X^n</m> is not zero is called the <em>leading coefficient</em> of <m>P</m> and <m>n</m> is called the <em>degree</em> of <m>P</m>. A polynomial <m>P</m> is called a <em>monic</em> polynomial if the leading coefficient is <m>1</m>.
     </p>
   </remark>
+  <definition xml:id="def-polynomial-function">
+    <title>Polynomial function</title>
+    <statement>
+      <p>
+        Let <m>R</m> be a ring and let <m>P=r_0+r_1X+\cdots+r_nX^n</m> be a polynomial in <m>R[X]</m>. The polynomial function <m>P(\cdot)\colon R\to R</m> is defined as follows:
+        <me>
+          P(x)=r_0+r_1x+\cdots+r_nx^n\quad\text{ for }x\in R.
+        </me>
+      </p>
+    </statement>
+  </definition>
+  <definition xml:id="def-root-of-a-polynomial">
+    <title>Root of a polynomial</title>
+    <statement>
+      <p>
+        Keep notation as in <xref ref="def-polynomial-function"/>. An element <m>r\in R</m> is called a root of the polynomial <m>P\in R[X]</m> if <m>P(r)=0</m>.
+      </p>
+    </statement>
+  </definition>
   <exercise>
     <statement>
       <p>
@@ -95,4 +114,11 @@
       </p>
     </statement>
   </example>
+  <exercise>
+    <statement>
+      <p>
+        Let <m>A</m> be a commutative ring with unity. Show that <m>a\in A</m> is a root of a polynomial <m>P\in A[X]</m> if and only if <m>(X-a)</m> divides <m>P</m>.
+      </p>
+    </statement>
+  </exercise>
 </section>
