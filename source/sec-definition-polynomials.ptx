@@ -20,4 +20,13 @@
     </statement>
   </example>
 
+    <example>
+    <statement>
+      <p>
+        We define <m>X\colon\Z_{\geq 0}\to R</m> such that <m>1\mapsto 1</m> and <m>n\mapsto 0</m> for all <m>n\neq 1</m>.
+      </p>
+    </statement>
+  </example>
+
+
 </section>
