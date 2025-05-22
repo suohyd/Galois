@@ -4,5 +4,13 @@
   <title>Definition</title>
 
   <p> Let <m>R</m> be a ring with unity. We give definition of a polynomial in one inderminate with coefficients in a ring <m>R</m>. </p>
+  <definition xml:id="def-polynomial">
+    <title>Definition of a polynomial</title>
+    <statement>
+      <p>
+        A polynomial in one indeterminate with coefficients in a ring <m>R</m> is defined as a map <m>P\colon\mathbb{Z}_{\geq 0}\to R</m> such that the image of <m>n\in\Z_{\geq 0}</m> under <m>P</m> is denoted by <m>P_n</m> and the set <m>{\mathrm supp }P=\{n\in\mathbb{Z}_{\geq 0}:P_n\neq 0\}</m> is finite.
+        </p>
+    </statement>
+  </definition>
 
 </section>
