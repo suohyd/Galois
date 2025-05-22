@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-definition-polynomial" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-definition-polynomials" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Definition</title>
 
   <p> Let <m>R</m> be a ring with unity. We give definition of a polynomial in one inderminate with coefficients in a ring <m>R</m>. </p>

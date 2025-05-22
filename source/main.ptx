@@ -6,13 +6,13 @@
 
   <book xml:id="GaloisTheory">
     <title>Galois Theory</title>
-    <subtitle>Companion notes to Algebra-III</subtitle>
+    <subtitle>Companion notes to Algebra-III course</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <xi:include href="./ch-polynomials.ptx" />
 
 
     <!-- Include backmatter -->
