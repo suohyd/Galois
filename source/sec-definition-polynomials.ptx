@@ -66,6 +66,14 @@
       </p>
     </statement>
   </exercise>
+  <definition xml:id="def-ring-of-polynomials-in-several-variables">
+    <title>Ring of polynomials in several variables</title>
+    <statement>
+      <p>
+        Let <m>n\in\N</m>. The ring of polynomials in <m>n</m> variables with coefficients in a ring <m>R</m> is denoted by <m>R[X_1,\ldots,X_n]</m>. It is defined in a similar as above <xref ref="def-ring-of-polynomials"/>.
+      </p>
+    </statement>
+  </definition>
   <p>
     We state the following theorem without proof. The proof is similar to the proof of the division algorithm in field case.
   </p>
@@ -83,7 +91,7 @@
         Let <m>I=\{f\in\Q[X,Y]:f(t^2,t^3)=0\text{ for }t\in\Q\}</m>. We show that <m>Y^2-X^3</m> divides <m>f\in I</m>.
       </p>
       <p>
-        Suppose that <m>A=\Q[X]</m>. Note that <m>\Q[X,Y]=A[Y]</m>. As <m>Y^2-X^3</m> is a monic polynomial in <m>A[Y]</m>, there exists <m>Q,R\in\A[Y]</m> such that <m>f=Q(X,Y)(Y^2-X^3)+R(X,Y)</m> with <m>R=a(X)Y+b(X)</m>.
+        Suppose that <m>A=\Q[X]</m>. Note that <m>\Q[X,Y]=A[Y]</m>. As <m>Y^2-X^3</m> is a monic polynomial in <m>A[Y]</m>, there exists <m>Q,R\in A[Y]</m> such that <m>f=Q(X,Y)(Y^2-X^3)+R(X,Y)</m> with <m>R=a(X)Y+b(X)</m>. Therefore, <m>a(t^2)t^3+b(t^2)=0</m> for all <m>t\in\Q</m>. As <m>\Q</m> is an infinite field, we get that <m>a(Z^2)Z^3+b(Z^2)=0\in\Q[Z]</m>. Hence, by separating the odd and the even degree terms, we get that <m>a=0=b</m>, i.e., <m>R=0</m>. Therefore, <m>(Y^2-X^3)</m> divides <m>f</m>.
       </p>
     </statement>
   </example>
