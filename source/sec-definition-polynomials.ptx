@@ -28,14 +28,33 @@
     </statement>
   </example>
   <definition xml:id="def-ring-of-polyniomials">
+    <title>Ring of polynomials</title>
+       
     <statement>
       <p>
         For two polynomials <m>P,Q</m> their addition, <m>P+Q</m> is defined as the addition of functions, i.e., <m>(P+Q)_n=P_n+Q_n</m>. Their product is defined as follows:<me>
           (PQ)_n=\sum_{i+j=n}P_i\cdot Q_j
         </me>
-        
+      </p>
+      <p>
+        The set of all polynomials in one indeterminate with coefficients in a ring <m>R</m> is denoted by <m>R[X]</m>. The set <m>R[X]</m> is a ring with unity, where the unity is the polynomial <m>1\colon\Z_{\geq 0}\to R</m> such that <m>0\mapsto 1</m> and <m>n\mapsto 0</m> for all <m>n\neq 0</m>.
       </p>
     </statement>
   </definition>
+  <remark>
+    <statement>
+      <p>
+        Note that every polynomial <m>P</m> can be uniquely written as <m>P=\sum P_i\cdot X^i</m>.
+      So, from now onwards write <m>r_0+r_1X+\cdots+r_nX^n</m> for the polynomial that maps <m>i\in\Z_{\geq 0}</m> to <m>r_i</m> for <m>i=0,1,\ldots,n</m> and to <m>0</m> for <m>i \geq n+1</m>.
+      </p>
+    </statement>
+  </remark>
+  <exercise>
+    <statement>
+      <p>
+        Convince yourself that the usual definition given in terms of formal sums of monomials is equivalent to the definition given above.
+      </p>
+    </statement>
+  </exercise>
 
 </section>
