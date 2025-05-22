@@ -27,6 +27,15 @@
       </p>
     </statement>
   </example>
-
+  <definition xml:id="def-ring-of-polyniomials">
+    <statement>
+      <p>
+        For two polynomials <m>P,Q</m> their addition, <m>P+Q</m> is defined as the addition of functions, i.e., <m>(P+Q)_n=P_n+Q_n</m>. Their product is defined as follows:<me>
+          (PQ)_n=\sum_{i+j=n}P_i\cdot Q_j
+        </me>
+        
+      </p>
+    </statement>
+  </definition>
 
 </section>
