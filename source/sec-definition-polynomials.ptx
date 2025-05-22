@@ -70,7 +70,7 @@
     <title>Ring of polynomials in several variables</title>
     <statement>
       <p>
-        Let <m>n\in\N</m>. The ring of polynomials in <m>n</m> variables with coefficients in a ring <m>R</m> is denoted by <m>R[X_1,\ldots,X_n]</m>. It is defined in a similar as above <xref ref="def-ring-of-polynomials"/>.
+        Let <m>n\in\N</m>. The ring of polynomials in <m>n</m> variables with coefficients in a ring <m>R</m> is denoted by <m>R[X_1,\ldots,X_n]</m>. It is defined in a similar way as above <xref ref="def-ring-of-polynomials"/>.
       </p>
     </statement>
   </definition>
