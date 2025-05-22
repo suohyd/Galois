@@ -77,8 +77,8 @@
   <p>
     We state the following theorem without proof. The proof is similar to the proof of the division algorithm in field case.
   </p>
-  <theorem xml:id="thm-euclidean-algorithm">
-    <title>Euclidean Algorithm</title>
+  <theorem xml:id="thm-euclidean-division">
+    <title>Euclidean Division</title>
     <statement>
       <p>
         Let <m>A</m> be a commutative ring with unity and <m>P_1,P_2\in A[X]</m> be polynomials. If the leading coefficient of <m>P_2</m> is invertible in <m>A</m>, then there exist unique polynomials <m>Q,R\in A[X]</m> such that <m>P_1=P_2Q+R</m> and <m>\deg R &lt; \deg P_2</m>.
