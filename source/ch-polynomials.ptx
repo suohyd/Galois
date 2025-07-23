@@ -9,5 +9,6 @@
 
   <!-- include sections -->
   <xi:include href="sec-definition-polynomials.ptx" />
+  <xi:include href="sec-characteristic-of-ring.ptx" />
 
 </chapter>
