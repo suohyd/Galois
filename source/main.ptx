@@ -13,6 +13,7 @@
 
     <!-- Include chapters -->
     <xi:include href="./ch-polynomials.ptx" />
+    <xi:include href="./ch-fields.ptx" />
 
 
     <!-- Include backmatter -->
