@@ -9,6 +9,6 @@
 
   <!-- include sections -->
   <xi:include href="sec-characteristic-of-ring.ptx" />
-  <xi:include href="sec-prime-subfield.ptx" />>
+  <xi:include href="sec-prime-subfield.ptx" />
 
 </chapter>

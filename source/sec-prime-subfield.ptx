@@ -2,4 +2,7 @@
 
 <section xml:id="sec-prime-subfield" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Prime subfield</title>
+    <p>
+        We begin with the definition of a prime subfield of a field <m>F</m>.
+    </p>
 </section>
