@@ -2,12 +2,7 @@
 
 <chapter xml:id="ch-polynomials" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Field Theory</title>
-
-  <!--<introduction>
-    <p> We begin with a formal definition of polynomial in one indeterminate. </p>
-  </introduction>-->
-
-  <!-- include sections -->
+  
   <xi:include href="sec-characteristic-of-ring.ptx" />
   <xi:include href="sec-prime-subfield.ptx" />
 
