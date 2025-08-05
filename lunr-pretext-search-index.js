@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Definition",
-  "body": " Definition  Let be a ring with unity. We give definition of a polynomial in one variable with coefficients in a ring .   Definition of a polynomial   A polynomial in one variable with coefficients in a ring is defined as a map such that the image of under is denoted by and the set is finite.      Given we define such that and for all .      We define such that and for all .     Ring of polynomials   For two polynomials their addition, is defined as the addition of functions, i.e., . Their product is defined as follows:   The set of all polynomials in one indeterminate with coefficients in a ring is denoted by . The set is a ring with unity, where the unity is the polynomial such that and for all .     Note that every polynomial can be uniquely written as . So, from now onwards write for the polynomial that maps to for and to for .  As usual, for a nonzero polynomial the largest integer for which the coefficient of is not zero is called the leading coefficient of and is called the degree of . A polynomial is called a monic polynomial if the leading coefficient is .    Polynomial function   Let be a ring and let be a polynomial in . The polynomial function is defined as follows:      Root of a polynomial   Keep notation as in . An element is called a root of the polynomial if .      Convince yourself that the usual definition given in terms of formal sums of monomials is equivalent to the definition given above.      Convince yourself that distinguishes a polynomial and a polynomial function.  Indeed, let be a finite field. The polynomial is not a zero polynomial, but the polynomial function is a zero function.     Ring of polynomials in several variables   Let . The ring of polynomials in variables with coefficients in a ring is denoted by . It is defined in a similar way as above .    We state the following theorem without proof. The proof is similar to the proof of the division algorithm in field case.   Euclidean Division   Let be a commutative ring with unity and be polynomials. If the leading coefficient of is invertible in , then there exist unique polynomials such that and .      Let . We show that divides .  Suppose that . Note that . As is a monic polynomial in , there exists such that with . Therefore, for all . As is an infinite field, we get that . Hence, by separating the odd and the even degree terms, we get that , i.e., . Therefore, divides .      Let be a commutative ring with unity. Show that is a root of a polynomial if and only if divides .    "
+  "body": " Definition  Let be a ring with unity. We give definition of a polynomial in one variable with coefficients in a ring .   Polynomial in one variable   A polynomial in one variable with coefficients in a ring is defined as a map such that the image of under is denoted by and the set is finite.      Given we define such that and for all .      We define such that and for all .     Ring of polynomials   For two polynomials their addition, is defined as the addition of functions, i.e., . Their product is defined as follows:   The set of all polynomials in one indeterminate with coefficients in a ring is denoted by . The set is a ring with unity, where the unity is the polynomial such that and for all .     Note that every polynomial can be uniquely written as . So, from now onwards write for the polynomial that maps to for and to for .  As usual, for a nonzero polynomial the largest integer for which the coefficient of is not zero is called the leading coefficient of and is called the degree of . A polynomial is called a monic polynomial if the leading coefficient is .    Polynomial function   Let be a ring and let be a polynomial in . The polynomial function is defined as follows:      Root of a polynomial   Keep notation as in . An element is called a root of the polynomial if .      Convince yourself that the usual definition given in terms of formal sums of monomials is equivalent to the definition given above.      Convince yourself that distinguishes a polynomial and a polynomial function.  Indeed, let be a finite field. The polynomial is not a zero polynomial, but the polynomial function is a zero function.     Ring of polynomials in several variables   Let . The ring of polynomials in variables with coefficients in a ring is denoted by . It is defined in a similar way as above .    We state the following theorem without proof. The proof is similar to the proof of the division algorithm in field case.   Euclidean Division   Let be a commutative ring with unity and be polynomials. If the leading coefficient of is invertible in , then there exist unique polynomials such that and .      Let . We show that divides .  Suppose that . Note that . As is a monic polynomial in , there exists such that with . Therefore, for all . As is an infinite field, we get that . Hence, by separating the odd and the even degree terms, we get that , i.e., . Therefore, divides .      Let be a commutative ring with unity. Show that is a root of a polynomial if and only if divides .    "
 },
 {
   "id": "def-polynomial",
@@ -24,8 +24,8 @@ var ptx_lunr_docs = [
   "url": "sec-definition-polynomials.html#def-polynomial",
   "type": "Definition",
   "number": "1.1.1",
-  "title": "Definition of a polynomial.",
-  "body": " Definition of a polynomial   A polynomial in one variable with coefficients in a ring is defined as a map such that the image of under is denoted by and the set is finite.   "
+  "title": "Polynomial in one variable.",
+  "body": " Polynomial in one variable   A polynomial in one variable with coefficients in a ring is defined as a map such that the image of under is denoted by and the set is finite.   "
 },
 {
   "id": "sec-definition-polynomials-4",
@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Field generated by a subset",
-  "body": " Field generated by a subset  We begin by defining an -algebra, where is a field.    Let be a field. An -algebra or an algebra over a field is an associative ring with a unit together with a the ring homomorphism . The ring is also given an -vector space structure by defining the scalar multiplication .     Suppose that is an -algebra. Then, is both a ring and an -vector space. Furthermore, the ring and vector space structures are compatible, i.e., for and we have the following. Similarly, we have the following by using the fact that .   Therefore,         Let be a field. Then, the polynomial ring is an -algebra.    The ring of matrices with entries in , denoted by , is an -algebra.    If is a field extension, then is an -algebra.         Let be an extension of fields and be a subset of .   The ring generated by is the intersection of all subrings of containing , denoted by . If then, we write .    The field generated by is the intersection of all subfields of containing , denoted by . If then, we write .         Let be a field extension, and let . Then, and      Consider the evaluation -algebra homomorphism given by . The image of this homomorphism is a subring of containing . By the closure of addition and multiplication the image of is contained in every subring of containing and . Thus, the image of is the ring generated by , i.e., .  A similar argument shows the statement about .   "
+  "body": " Field generated by a subset  We begin by defining an -algebra, where is a field.    Let be a field. An -algebra or an algebra over a field is an associative ring with unity together with a ring homomorphism . The ring is also given an -vector space structure by defining the scalar multiplication .     Suppose that is an -algebra. Then, is both a ring and an -vector space. Furthermore, the ring and vector space structures are compatible, i.e., for and we have the following. Similarly, we have the following by using the fact that .   Therefore,     Note that for and we have . Also, . Hence, .        Let be a field. Then, the polynomial ring is an -algebra.    The ring of matrices with entries in , denoted by , is an -algebra.    If is a field extension, then is an -algebra.        Algebra homomorphism   Suppose that is a field and that are -algebras. An -algebra homomorphism from to is a ring homomorphism as well as an -linear map.     Evaluation as an algebra homomorphism   Let be a field extension, and let . The evaluation map given by is an -algebra homomorphism.      Let be an extension of fields and be a subset of .   The ring generated by is the intersection of all subrings of containing , denoted by . If then, we write .    The field generated by is the intersection of all subfields of containing , denoted by . If then, we write .         Let be a field extension, and let . Then, and      Consider the evaluation -algebra homomorphism given by . The image of this homomorphism is a subring of containing . By the closure of addition and multiplication the image of is contained in every subring of containing and . Thus, the image of is the ring generated by , i.e., .  A similar argument shows the statement about .   "
 },
 {
   "id": "def-F-algebra",
@@ -214,7 +214,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "2.3.1",
   "title": "",
-  "body": "  Let be a field. An -algebra or an algebra over a field is an associative ring with a unit together with a the ring homomorphism . The ring is also given an -vector space structure by defining the scalar multiplication .   "
+  "body": "  Let be a field. An -algebra or an algebra over a field is an associative ring with unity together with a ring homomorphism . The ring is also given an -vector space structure by defining the scalar multiplication .   "
 },
 {
   "id": "sec-field-generated-by-4",
@@ -229,17 +229,44 @@ var ptx_lunr_docs = [
   "id": "sec-field-generated-by-5",
   "level": "2",
   "url": "sec-field-generated-by.html#sec-field-generated-by-5",
-  "type": "Example",
+  "type": "Observation",
   "number": "2.3.3",
   "title": "",
+  "body": " Note that for and we have . Also, . Hence, .  "
+},
+{
+  "id": "sec-field-generated-by-6",
+  "level": "2",
+  "url": "sec-field-generated-by.html#sec-field-generated-by-6",
+  "type": "Example",
+  "number": "2.3.4",
+  "title": "",
   "body": "     Let be a field. Then, the polynomial ring is an -algebra.    The ring of matrices with entries in , denoted by , is an -algebra.    If is a field extension, then is an -algebra.      "
+},
+{
+  "id": "def-algebra-homomorphism",
+  "level": "2",
+  "url": "sec-field-generated-by.html#def-algebra-homomorphism",
+  "type": "Definition",
+  "number": "2.3.5",
+  "title": "Algebra homomorphism.",
+  "body": " Algebra homomorphism   Suppose that is a field and that are -algebras. An -algebra homomorphism from to is a ring homomorphism as well as an -linear map.   "
+},
+{
+  "id": "ex-evaluation-map-as-algebra-homomorphism",
+  "level": "2",
+  "url": "sec-field-generated-by.html#ex-evaluation-map-as-algebra-homomorphism",
+  "type": "Example",
+  "number": "2.3.6",
+  "title": "Evaluation as an algebra homomorphism.",
+  "body": " Evaluation as an algebra homomorphism   Let be a field extension, and let . The evaluation map given by is an -algebra homomorphism.   "
 },
 {
   "id": "def-field-generated-by-a-subset",
   "level": "2",
   "url": "sec-field-generated-by.html#def-field-generated-by-a-subset",
   "type": "Definition",
-  "number": "2.3.4",
+  "number": "2.3.7",
   "title": "",
   "body": "  Let be an extension of fields and be a subset of .   The ring generated by is the intersection of all subrings of containing , denoted by . If then, we write .    The field generated by is the intersection of all subfields of containing , denoted by . If then, we write .      "
 },
@@ -248,14 +275,14 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-field-generated-by.html#prop-field-generated-by-a-subset",
   "type": "Proposition",
-  "number": "2.3.5",
+  "number": "2.3.8",
   "title": "",
   "body": "  Let be a field extension, and let . Then, and    "
 },
 {
-  "id": "sec-field-generated-by-8",
+  "id": "sec-field-generated-by-11",
   "level": "2",
-  "url": "sec-field-generated-by.html#sec-field-generated-by-8",
+  "url": "sec-field-generated-by.html#sec-field-generated-by-11",
   "type": "Proof",
   "number": "2.3.1",
   "title": "",
