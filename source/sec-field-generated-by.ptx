@@ -8,7 +8,7 @@
     <definition xml:id="def-F-algebra">
         <statement>
             <p>
-                Let <m>F</m> be a field. An <m>F</m>-algebra or an algebra over a field <m>F</m> is an associative ring <m>A</m> with a unit together with a the ring homomorphism <m>\varphi\colon F\to Z(A)</m>. The ring <m>A</m> is also given an <m>F</m>-vector space structure by defining the scalar multiplication <m>\alpha\cdot a\mapsto \varphi(\alpha)a</m>.
+                Let <m>F</m> be a field. An <m>F</m>-algebra or an algebra over a field <m>F</m> is an associative ring <m>A</m> with unity together with a ring homomorphism <m>\varphi\colon F\to Z(A)</m>. The ring <m>A</m> is also given an <m>F</m>-vector space structure by defining the scalar multiplication <m>\alpha\cdot a\mapsto \varphi(\alpha)a</m>.
             </p>
         </statement>
     </definition>
@@ -37,6 +37,11 @@
             </men>
             </p>            
     </observation>
+    <observation>
+        <p>
+            Note that for <m>\alpha\in F</m> and <m>a\in A</m> we have <m>(\alpha\cdot 1_A)a=\alpha\cdot a</m>. Also, <m>a(\alpha\cdot 1_A)=\alpha\cdot a</m>. Hence, <m>(\alpha\cdot 1_A)a=a(\alpha\cdot 1_A)</m>.
+        </p>
+    </observation>
     <example>
         <statement>
             <p>
@@ -57,6 +62,26 @@
                         </p>
                     </li>
                 </ol>
+            </p>
+        </statement>
+    </example>
+    <definition xml:id="def-algebra-homomorphism">
+        <title>Algebra homomorphism</title>
+        
+        
+        <statement>
+            <p>
+                Suppose that <m>F</m> is a field and that <m>A,B</m> are <m>F</m>-algebras. An <m>F</m>-algebra homomorphism from <m>A</m> to <m>B</m> is a ring homomorphism as well as an <m>F</m>-linear map.
+            </p>
+        </statement>
+    </definition>
+    <example xml:id="ex-evaluation-map-as-algebra-homomorphism">
+        <title>Evaluation as an algebra homomorphism</title>
+        
+        
+        <statement>
+            <p>
+                Let <m>E/F</m> be a field extension, and let <m>\alpha\in E</m>. The evaluation map <m>\ev_\alpha\colon F[x]\to E</m> given by <m>p(x)\mapsto p(\alpha)</m> is an <m>F</m>-algebra homomorphism.
             </p>
         </statement>
     </example>
